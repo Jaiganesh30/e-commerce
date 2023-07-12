@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Header from "./Header";
-import { NewTodo } from "./NewTodo";
-import TodoList from "./TodoList";
+// import { NewTodo } from "./NewTodo";
+// import TodoList from "./TodoList";
 import { Banner } from "../components/Banner";
 import { Accordion } from "../components/accordion";
+import { Footer } from "../components/footer";
 import { TodoModal } from "modals";
 import uuid from "react-uuid";
-import { Content } from "./content";
+// import { Content } from "./content";
 import { useGetAllTestDataQuery } from "../components/api/testApi";
 import { useDispatch } from "react-redux";
 import { saveDetails } from "../../redux/reducerSlice/counterSlice";
@@ -32,6 +33,7 @@ export const Main = () => {
       <Header />
       <Banner />
       <Accordion />
+      <Footer />
       {/* <Content data={undefined} /> */}
       {/* <NewTodo onAddTodo={todoHandler} /> */}
       {/* <TodoList items={todos} onDelete={onClickDelete} /> */}

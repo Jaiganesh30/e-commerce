@@ -32,45 +32,45 @@ const Header = ({ children }: AppProviderProps) => {
           >
             My Products
           </h1>
-          <button
+          <div
             style={{
-              border: "none",
-              backgroundColor: "transparent",
-              cursor: "pointer",
+              display: "flex",
+              justifyContent: "space-around",
+              alignItems: "center",
             }}
-            onClick={() => navigate("/cart")}
           >
-            <h1
+            <button
               style={{
-                display: "flex",
-                justifyContent: "space-around",
-                alignItems: "center",
+                border: "none",
+                backgroundColor: "transparent",
+                cursor: "pointer",
               }}
+              onClick={() => navigate("/cart")}
             >
-              <span>
-                <img src={cart} style={{ width: "50px", height: "50px" }} />
-              </span>
-              &nbsp;My Cart
-            </h1>
-          </button>
-          <button
-            style={{
-              border: "none",
-              backgroundColor: "transparent",
-              cursor: "pointer",
-            }}
-            onClick={() => navigate("/auth")}
-          >
-            <h1
+              <h1
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <span>
+                  <img src={cart} style={{ width: "50px", height: "50px" }} />
+                </span>
+                &nbsp;My Cart
+              </h1>
+            </button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <button
               style={{
-                display: "flex",
-                // justifyContent: "space-around",
-                alignItems: "center",
+                border: "none",
+                backgroundColor: "transparent",
+                cursor: "pointer",
               }}
+              onClick={() => navigate("/auth")}
             >
-              Login
-            </h1>
-          </button>
+              <h1>Login</h1>
+            </button>
+          </div>
         </header>
       </>
     </>
